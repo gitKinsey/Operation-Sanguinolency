@@ -5,3 +5,4 @@ Boys das chond ned guet!
 Nei definitf ned, ech meine lueg der de Stierli ah...
 Chond är eigentlich mal inne haha?
 Boys eg be auä gäng au denne!
+Zitat: Peter 
