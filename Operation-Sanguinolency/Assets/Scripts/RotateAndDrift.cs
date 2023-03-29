@@ -5,7 +5,7 @@ using UnityEngine;
 public class RotateAndDrift : MonoBehaviour
 {
     public float rotationSpeed = 50f;
-    public float driftSpeed = 5f;
+    public float driftSpeed = -5f;
     public float lockedZPosition = 0f;
 
     void Update()
