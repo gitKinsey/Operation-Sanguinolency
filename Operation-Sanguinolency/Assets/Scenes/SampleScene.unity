@@ -251,6 +251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 820472435}
   - component: {fileID: 820472434}
+  - component: {fileID: 820472436}
   m_Layer: 0
   m_Name: Square of Victory
   m_TagString: Untagged
@@ -325,6 +326,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &820472436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820472433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38b56dcbc970ef04c9ca3fbf9d676c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 1150
 --- !u!1 &936131179
 GameObject:
   m_ObjectHideFlags: 0
