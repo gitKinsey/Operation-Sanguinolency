@@ -251,7 +251,9 @@ GameObject:
   m_Component:
   - component: {fileID: 820472435}
   - component: {fileID: 820472434}
+  - component: {fileID: 820472437}
   - component: {fileID: 820472436}
+  - component: {fileID: 820472438}
   m_Layer: 0
   m_Name: Square of Victory
   m_TagString: Untagged
@@ -339,6 +341,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 1150
+  driftSpeed: 5
+--- !u!114 &820472437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820472433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1c94a66aec10a24f8242a7eec6ef97e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &820472438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820472433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2efeb3faf153246af62e959d17e4a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 200
+  driftSpeed: 1
+  lockedZPosition: 0
 --- !u!1 &936131179
 GameObject:
   m_ObjectHideFlags: 0
