@@ -557,6 +557,7 @@ GameObject:
   - component: {fileID: 820472438}
   - component: {fileID: 820472439}
   - component: {fileID: 820472440}
+  - component: {fileID: 820472441}
   m_Layer: 0
   m_Name: Square of Victory
   m_TagString: Untagged
@@ -669,6 +670,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 200
   driftSpeed: 5
+  slideSpeed: 1
+  slideDeceleration: 2
   lockedZPosition: 0
 --- !u!50 &820472439
 Rigidbody2D:
@@ -717,6 +720,52 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &820472441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820472433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8908c1f8a2b8224292e742ec0272424, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6712617348611180787, guid: d1522cf92b079f2458306cced1c45d99, type: 3}
+  firePoint: {fileID: 861432527}
+  bulletForce: 20
+--- !u!1 &861432526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 861432527}
+  m_Layer: 0
+  m_Name: shooterSpawener
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &861432527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861432526}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.34, y: 3.14, z: -2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936131179
 GameObject:
   m_ObjectHideFlags: 0

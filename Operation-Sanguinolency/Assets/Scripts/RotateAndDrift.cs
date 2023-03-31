@@ -32,6 +32,9 @@ public class RotateAndDrift : MonoBehaviour
 
             //store last movement direction
             lastMovementDirection = movementDirection;
+
+            //move the object in the movement direction
+            transform.position += movementDirection * currentSlideSpeed * Time.deltaTime;
         }
         //apply sliding effect in the direction of last movement if object is not moving
         else if (lastMovementDirection.magnitude > 0)
