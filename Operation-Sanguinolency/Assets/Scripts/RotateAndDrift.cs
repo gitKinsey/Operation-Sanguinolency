@@ -9,6 +9,7 @@ public class RotateAndDrift : MonoBehaviour
     public float slideSpeed = 1f;
     public float slideDeceleration = 2f; //new variable for slide deceleration
     public float lockedZPosition = 0f;
+    public float vertikalRotationMultiplyer = 5f;
 
     private Vector3 lastMovementDirection = Vector3.zero;
     private float currentSlideSpeed = 0f; //new variable for current slide speed
@@ -20,10 +21,15 @@ public class RotateAndDrift : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         //rotate the object based on input
-        transform.Rotate(verticalInput * rotationSpeed * Time.deltaTime, 0, -horizontalInput * rotationSpeed * Time.deltaTime);
+        transform.Rotate(verticalInput * rotationSpeed * Time.deltaTime * vertikalRotationMultiplyer, 0, -horizontalInput * rotationSpeed * Time.deltaTime);
 
         //calculate movement direction based on input
         Vector3 movementDirection = new Vector3(horizontalInput, verticalInput, 0).normalized;
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            transform.rotation = Quaternion.identity;
+        }
 
         //apply sliding effect if object is moving
         if (movementDirection.magnitude > 0)

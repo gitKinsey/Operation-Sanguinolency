@@ -323,7 +323,7 @@ Transform:
   - {fileID: 2073800747}
   - {fileID: 798053939}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -673,6 +673,7 @@ MonoBehaviour:
   slideSpeed: 1
   slideDeceleration: 2
   lockedZPosition: 0
+  vertikalRotationMultiplyer: 1.4
 --- !u!50 &820472439
 Rigidbody2D:
   serializedVersion: 4
@@ -734,7 +735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6712617348611180787, guid: d1522cf92b079f2458306cced1c45d99, type: 3}
   firePoint: {fileID: 861432527}
-  bulletForce: 20
+  bulletForce: 30
 --- !u!1 &861432526
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,13 +759,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861432526}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.34, y: 3.14, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936131179
 GameObject:
